@@ -1,11 +1,12 @@
 <template>
 <article>
   <h1>{{ title }}</h1>
-  {{ content }}
+  <section v-html="content"></section>
 </article>
 </template>
 
 <script>
+import marked from 'marked'
 import contentful from '../content'
 
 export default {
@@ -22,7 +23,7 @@ export default {
   methods: {
     setFields (fields) {
       this.title = fields.title
-      this.content = fields.content
+      this.content = marked(fields.content)
     }
   }
 }

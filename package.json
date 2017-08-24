@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "contentful": "^4.6.1",
+    "marked": "^0.3.6",
     "vue": "^2.3.3",
     "vue-router": "^2.6.0"
   },
