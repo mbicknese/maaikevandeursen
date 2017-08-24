@@ -9,6 +9,7 @@ export default {
   },
   getBlogPost (id) {
     return client
-      .getEntry(id)
+      .getEntry(id, 'blogPost')
+      .then(response => response.fields)
   }
 }
