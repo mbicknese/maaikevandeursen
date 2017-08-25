@@ -3,7 +3,7 @@
     <h1>Maaike van Deursen</h1>
     <ul>
       <li v-for="post in posts" :key="post.id">
-        {{ post.fields.title }}
+        <router-link :to="{ name: 'BlogPost', params: { id: post.sys.id }}">{{ post.fields.title }}</router-link>
       </li>
     </ul>
   </main>
