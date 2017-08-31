@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <header>
-      <div>
-        <h1>
+    <header class="navbar navbar-expanded">
+      <div class="container">
+        <h1 class="navbar-brand mb-0 d-block w-100">
           IvDP
-          <small>
+          <small class="float-sm-right text-secondary d-sm-block d-none">
             Instituut voor Duurzame Pedagogiek
           </small>
         </h1>
@@ -22,3 +22,10 @@ export default {
   name: 'app'
 }
 </script>
+
+<style scoped>
+  header.navbar {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    color: #4527A0;
+  }
+</style>
