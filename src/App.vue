@@ -26,6 +26,7 @@ export default {
 <style scoped>
   header.navbar {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    color: #4527A0;
+    color: #6200EA;
+    background: #FFF;
   }
 </style>
