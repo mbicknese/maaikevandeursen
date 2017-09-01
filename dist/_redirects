@@ -1,0 +1,8 @@
+https://ivdp.nl/* https://www.ivdp.nl/:splat 301!
+https://instituutvoorduurzamepedagogiek.nl/* https://www.ivdp.nl/:splat 301!
+https://instituut-voor-duurzame-pedagogiek.nl/* https://www.ivdp.nl/:splat 301!
+https://www.instituutvoorduurzamepedagogiek.nl/* https://www.ivdp.nl/:splat 301!
+https://www.instituut-voor-duurzame-pedagogiek.nl/* https://www.ivdp.nl/:splat 301!
+
+/     /index.html   200
+/*    /index.html   404
