@@ -1,6 +1,39 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <header class="navbar navbar-expanded">
+      <div class="container">
+        <h1 class="navbar-brand mb-0 d-block w-100">
+          IvDP
+          <small class="float-sm-right text-secondary d-sm-block d-none">
+            Instituut voor Duurzame Pedagogiek
+          </small>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <router-view></router-view>
+    </main>
+    <footer class="bottom-footer">
+      <div class="container text-center">
+        <nav class="social">
+          <ul>
+            <li>
+              <a href="https://twitter.com/het_IvDP">
+                <svg><use xlink:href="static/icons.svg#icon-twitter"></use></svg>
+              </a>
+            </li><li>
+              <a href="https://www.facebook.com/Instituut-voor-Duurzame-Pedagogiek">
+                <svg><use xlink:href="static/icons.svg#icon-facebook"></use></svg>
+              </a>
+            </li>
+            <li v-if="false"><a href="https://plus.google.com/">
+              <svg><use xlink:href="static/icons.svg#icon-google-plus"></use></svg>
+            </a></li>
+          </ul>
+        </nav>
+        <p class="h6">&copy; 2017 Instituut voor Duurzame Pedagogiek</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -10,13 +43,53 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  header.navbar {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    color: #6200EA;
+    background: #FFF;
+  }
+
+  .bottom-footer {
+    color: #263238;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  main {
+    background: #FAFAFA;
+    overflow: hidden;
+    padding-bottom: 5rem;
+  }
+
+  .social ul {
+    list-style: none;
+    padding: 0;
+  }
+  .social ul:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90vw;
+    left: 5vw;
+    border-top: 1px solid #651FFF;
+    margin-top: 1.5rem;
+  }
+  .social li {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.75rem;
+    background: #E0E0E0;
+  }
+  .social a svg {
+    width: 100%;
+    height: 100%;
+    fill: #7C4DFF;
+  }
+  .social a:hover svg {
+    fill: #651FFF;
+  }
 </style>

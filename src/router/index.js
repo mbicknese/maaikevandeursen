@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+// import Hello from '@/components/Hello'
+import ComingSoon from '@/components/ComingSoon'
 import BlogPost from '@/components/BlogPost'
 
 Vue.use(Router)
@@ -10,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'Hello',
-      component: Hello
+      component: ComingSoon
     },
     {
       path: '/blog/:id',
