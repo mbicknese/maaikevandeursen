@@ -1,5 +1,5 @@
 <template>
-  <main class="container mt-5">
+  <div class="container mt-5">
     <h1 class="display-5 text-center">
       Binnenkort gereed!
     </h1>
@@ -34,7 +34,7 @@
     </article>
 
 <!--End mc_embed_signup-->
-  </main>
+  </div>
 </template>
 
 <script>
