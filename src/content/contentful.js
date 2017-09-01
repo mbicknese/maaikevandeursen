@@ -11,5 +11,10 @@ export default {
     return client
       .getEntry(id, 'blogPost')
       .then(response => response.fields)
+  },
+  getPageContent (id) {
+    return client
+      .getEntry(id, 'page')
+      .then(response => response.fields.content)
   }
 }

@@ -4,7 +4,7 @@
       Binnenkort gereed!
     </h1>
     <p class="mb-5 mt-4">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan ipsum augue, ac laoreet diam fermentum in. Integer aliquet a lacus vel iaculis. Quisque porttitor, mauris nec malesuada consequat, dolor ante fringilla erat, non rhoncus ligula nunc nec orci.
+      {{ content }}
     </p>
 <!-- Begin MailChimp Signup Form -->
     <article id="mc_embed_signup" class="row row-backbordered">
@@ -38,8 +38,18 @@
 </template>
 
 <script>
+import contentful from '@/content'
+
 export default {
-  name: 'Coming Soon'
+  name: 'coming-soon',
+  mounted () {
+    contentful
+      .getPageContent('1MpxKdaWgICwgeuEg8AEc8')
+      .then(content => { this.content = content })
+  },
+  data: () => ({
+    content: 'loading...'
+  })
 }
 </script>
 
