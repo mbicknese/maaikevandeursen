@@ -15,20 +15,23 @@
     </main>
     <footer class="bottom-footer">
       <div class="container text-center">
-        <p>&copy; 2017 Instituut voor Duurzame Pedagogiek</p>
         <nav class="social">
           <ul>
-            <li><a href="https://twitter.com/het_IvDP">
-              <svg><use xlink:href="static/icons.svg#icon-twitter"></use></svg>
-            </a></li>
-            <li><a href="https://www.facebook.com/Instituut-voor-Duurzame-Pedagogiek">
-              <svg><use xlink:href="static/icons.svg#icon-facebook"></use></svg>
-            </a></li>
-            <li><a href="https://plus.google.com/">
+            <li>
+              <a href="https://twitter.com/het_IvDP">
+                <svg><use xlink:href="static/icons.svg#icon-twitter"></use></svg>
+              </a>
+            </li><li>
+              <a href="https://www.facebook.com/Instituut-voor-Duurzame-Pedagogiek">
+                <svg><use xlink:href="static/icons.svg#icon-facebook"></use></svg>
+              </a>
+            </li>
+            <li v-if="false"><a href="https://plus.google.com/">
               <svg><use xlink:href="static/icons.svg#icon-google-plus"></use></svg>
             </a></li>
           </ul>
         </nav>
+        <p class="h6">&copy; 2017 Instituut voor Duurzame Pedagogiek</p>
       </div>
     </footer>
   </div>
@@ -63,11 +66,23 @@ export default {
     list-style: none;
     padding: 0;
   }
+  .social ul:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90vw;
+    left: 5vw;
+    border-top: 1px solid #651FFF;
+    margin-top: 1.5rem;
+  }
   .social li {
+    position: relative;
+    z-index: 2;
     display: inline-block;
     width: 3rem;
     height: 3rem;
     padding: 0.75rem;
+    background: #E0E0E0;
   }
   .social a svg {
     width: 100%;
