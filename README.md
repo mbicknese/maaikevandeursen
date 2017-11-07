@@ -1,3 +1,3 @@
-# Project P, Front-office
+# IvDP Website
 
-This repo holds the actual website served to end users.
+This repository holds the website for [IvDP](https://www.ivdp.nl).
