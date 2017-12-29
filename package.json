@@ -5,7 +5,7 @@
   "description": "IvDP official website",
   "main": "src/index.js",
   "scripts": {
-    "dev": "node_modules/.bin/webpack-dev-server --config etc/webpack.config.js -d --env.platform=default --progress",
+    "dev": "node_modules/.bin/webpack-dev-server --config etc/webpack.config.js -d --env.platform=default --progress --hot",
     "test": "node_modules/.bin/jest --config etc/jest/jest.config.js",
     "build": "NODE_ENV=production node_modules/.bin/webpack --config etc/webpack.config.js"
   },

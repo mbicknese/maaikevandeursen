@@ -7,7 +7,7 @@ const propTypes = {
 
 function Title ({ text }) {
   return (
-    <h1 className='font-light text-black'>
+    <h1 className='font-light text-white font-serif'>
       { text }
     </h1>
   )
