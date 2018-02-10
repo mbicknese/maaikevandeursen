@@ -7,63 +7,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bundle.css" type="text/css">
     <style>
-      .logo:after {
+      a {
+        color: #ff833e;
+      }
+
+      .logo:before {
         display: block;
         content: '';
-        background: url('/img/logo.png') no-repeat;
+        background: url('/img/logo.svg') no-repeat;
         background-size: contain;
         padding-top: 75%;
+      }
+      .logo:after {
+        display: block;
+        content: 'Instituut voor Duurzame Pedagogiek';
       }
     </style>
   </head>
   <body>
 
     <header class="mb-8">
-      <div class="container mx-auto flex flex-wrap items-center justify-between pt-8 pb-8">
-        <div class="logo mx-auto w-3/4 md:w-1/4 md:mx-0"></div>
-        <h1 class="text-orange text-xl md:text-4xl font-semibold">
-          Onvoorwaardelijk is niet grenzenloos.
+      <div class="container mx-auto flex flex-wrap items-center justify-between py-8 px-2 font-serif">
+        <div class="logo mx-auto w-3/4 md:w-1/4 md:mx-0 text-green"></div>
+        <h1 class="text-orange text-xl md:text-4xl font-semibold text-center">
+          Positive Parenting Your Baby: Your Game Plan
         </h1>
       </div>
       <div class="bg-green">
         <nav class="container mx-auto py-6">
           <ul class="list-reset flex justify-center flex-no-wrap">
-            <li><a href="" class="text-white text-xl font-thin px-3 no-underline hover:underline">Home</a></li>
-            <li><a href="" class="text-white text-xl font-thin px-3 no-underline hover:underline">Visie</a></li>
-            <li><a href="" class="text-white font-medium text-xl font-thin px-3 no-underline hover:underline">Diensten</a></li>
-            <li><a href="" class="text-white text-xl font-thin px-3 no-underline hover:underline">Contact</a></li>
+            <li><a href="" class="text-white text-xl font-light px-3 no-underline hover:underline">Home</a></li>
+            <li><a href="" class="text-white text-xl font-light px-3 no-underline hover:underline">Visie</a></li>
+            <li><a href="" class="text-white font-medium text-xl px-3 no-underline hover:underline">Diensten</a></li>
+            <li><a href="" class="text-white text-xl font-light px-3 no-underline hover:underline">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main class="container mx-auto flex flex-wrap">
-      <aside class="w-full md:w-1/4">
+      <aside class="w-full md:w-1/4" style="display: none">
         <div class="px-4">
           <img src="https://images.pexels.com/photos/265987/pexels-photo-265987.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb" />
           <p class="border-t border-green pt-2 mt-2">Laat je babies niet huilen!</p>
         </div>
       </aside>
-      <article class="text-grey-darker font-thin leading-normal w-full md:w-3/4">
-          <p class="mb-4 px-8 font-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis augue tempor magna porttitor semper. Proin eu est non erat laoreet tempus. Donec sollicitudin nulla et feugiat elementum. Sed tempor tempus felis id egestas. Curabitur interdum orci eu tempus aliquam. Sed in suscipit quam. Donec molestie mi ac massa rhoncus posuere. Vivamus ut arcu pharetra, blandit leo nec, commodo arcu. Mauris sapien orci, venenatis vitae ligula vel, lobortis tristique quam.
+      <article class="text-grey-darker font-light leading-normal w-full md:w-3/4">
+          <p class="mb-4 px-3 px-8:md font-medium">
+            Your baby is developing his own personality. What do you need to know to be a great parent? Your growing baby's developmental tasks, your priorities, and a simple Parents' Gameplan, all set up to make your life easier when you've got only three minutes to read before he wakes up.
           </p>
-          <div style="height: 10rem; overflow: hidden" class="mb-4 px-8">
-            <img style="margin-top: -10rem" src="https://images.pexels.com/photos/101537/baby-boy-hat-covered-101537.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb" />
+          <div style="height: 10rem; overflow: hidden" class="mb-4 px-8:mf">
+            <img style="margin-top: -5rem" src="https://images.pexels.com/photos/101537/baby-boy-hat-covered-101537.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb" />
           </div>
-          <p class="mb-6 px-8">
-            Nunc ac magna sed libero gravida congue vitae non purus. Phasellus iaculis nec nibh quis lacinia. Ut varius elementum ipsum sit amet vulputate. Etiam vel sem ut libero sollicitudin luctus. Suspendisse erat turpis, luctus at fringilla ac, elementum vel nisi. Ut vitae fringilla tortor. Aliquam condimentum tempus mauris non suscipit. Vivamus dapibus massa mi, id interdum diam viverra et. Nam id egestas magna. Nulla facilisi. Mauris et purus commodo, auctor massa vel, ornare nibh. Suspendisse tempor, erat ac convallis tempus, risus lectus volutpat erat, a consectetur est quam a est. Suspendisse potenti. Curabitur et metus vehicula, pulvinar dolor ac, rutrum metus. Integer sollicitudin, purus sit amet viverra aliquam, purus magna venenatis nunc, non vestibulum nunc nulla consectetur dui.
+          <p class="mb-6 px-3 px-8:md">
+            <h2 class="px-3 px-8:md">Your Baby's Developmental Tasks:</h2>
+            <ul>
+              <li>Rapid physical and brain development in response to environment.</li>
+              <li>Development of receptive & expressive language.</li>
+              <li>Development of ability to self-soothe.</li>
+              <li>Development of capacity for trust & intimacy.</li>
+            </ul>
           </p>
-          <p class="mb-6 px-8">
-            Suspendisse non tortor in mi cursus eleifend. Proin consequat sapien non mauris dignissim, vitae luctus massa bibendum. Morbi sed molestie turpis. Praesent at ligula id nisi finibus tempus. Etiam nulla quam, congue vitae elementum vitae, vehicula non magna. Proin vitae sollicitudin nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla elementum nibh vitae pellentesque imperdiet. Proin varius dolor nunc. Pellentesque elementum, odio a molestie scelerisque, quam lectus commodo sem, in finibus lectus neque ac elit. Nunc congue pellentesque odio sed pellentesque. Suspendisse at libero tellus. Sed facilisis mauris a dignissim consectetur. Sed nunc metus, tincidunt a ex eu, porta gravida massa. Nulla tempor lacus lorem, nec euismod odio convallis eu. Nullam quis tincidunt dui.
+          <p class="mb-6 px-3 px-8:md">
+            The health and intelligence effects are greater the longer the baby nurses. Not to mention that it lowers the mom’s risk of cancer later in life. The positive health effects of breast milk are diminished the minute you introduce formula, so nurse more to increase your milk supply instead of supplementing.
           </p>
           <p class="mb-6 px-8 py-4 border-l-4 border-orange-dark bg-orange-light text-white">
             <b class="font-semibold">Tip:</b> Lukt het niet altijd rustig te blijven? Stop jezelf dan liever vol met eten dan dat je je kinderen gaat slaan!
           </p>
-          <p class="mb-6 px-8">
-            Praesent eget ante purus. Vivamus placerat libero non sem blandit faucibus. Ut non mollis erat. Quisque et consectetur arcu. Nunc sed neque auctor, tempor metus nec, placerat nisi. Donec arcu ex, rutrum in libero eu, ornare malesuada turpis. Suspendisse at libero tincidunt, euismod enim nec, cursus libero. Curabitur venenatis tempus turpis, non mattis eros hendrerit a. Phasellus quis arcu nec nisi suscipit fringilla quis ac risus. Sed vitae nibh non odio laoreet volutpat quis quis urna. Proin posuere ullamcorper odio non porta. Aliquam tempus ac ipsum quis vehicula. Donec at sagittis purus, non tempor diam. Pellentesque malesuada neque orci, eget blandit elit porttitor sed. Nullam vel molestie risus, et hendrerit arcu.
+          <p class="mb-6 px-3 px-8:md">
+            By 12 months, many pediatricians recommend no more night nursings, because you risk giving your baby cavities. It can be a challenge to teach your baby to go back to sleep without nursing. Check out the <a href="#">sleep pages on this site</a>.
           </p>
-          <p class="mb-6 px-8">
+          <p class="mb-6 px-3 px-8:md">
             Nullam venenatis, felis eu tincidunt aliquam, lectus urna rutrum ante, in ullamcorper dolor odio quis ligula. Cras quis iaculis sapien. Phasellus et lobortis erat. Morbi ultrices pulvinar ex, quis accumsan turpis sodales non. Fusce id erat aliquet, iaculis nisl sed, gravida orci. Etiam efficitur tincidunt mattis. Praesent feugiat lorem ornare nulla porttitor, sit amet dignissim diam placerat. Morbi vitae ipsum cursus, luctus felis vitae, feugiat orci. Ut ornare ullamcorper lectus quis gravida. Vivamus ut maximus mauris. Nunc ex lacus, dictum sed ultricies eu, malesuada quis purus. In non faucibus urna, quis accumsan leo. Pellentesque mattis purus eget nisl laoreet accumsan.
           </p>
       </article>
