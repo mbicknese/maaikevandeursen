@@ -48,12 +48,12 @@ var colors = {
 
   'black': '#222b2f',
   'grey-darkest': '#364349',
-  'grey-darker': '#596a73',
+  'grey-darker': '#6e645e',
   'grey-dark': '#70818a',
   'grey': '#9babb4',
   'grey-light': '#dae4e9',
   'grey-lighter': '#f3f7f9',
-  'grey-lightest': '#fafcfc',
+  'grey-lightest': '#fbfaf9',
   'white': '#ffffff',
 
   'red-darkest': '#420806',

@@ -2,6 +2,7 @@
 
 body {
   @apply .font-sans;
+  @apply .bg-grey-lightest;
 }
 
 @tailwind utilities;
